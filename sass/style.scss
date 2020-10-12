@@ -1,0 +1,64 @@
+@import "content/header";
+@import "content/navbar";
+@import "content/home";
+@import "content/model";
+@import "content/Register";
+
+
+
+body {
+  
+  font-family: 'Niconne', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+section.main-slider {
+  position: relative;
+
+  .title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    h1 {
+      font-family: 'Niconne', cursive;
+      font-weight: bold;
+    }
+    p {
+      width: 34%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media (max-width: 991.98px) { 
+      justify-content: flex-start;
+      h1 {
+        margin-top: 20px;
+      }
+      p {
+        width: 60%;
+      }
+    }
+
+  }
+}
+#main-slider {
+  height: 80vh;
+}
+
+
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}

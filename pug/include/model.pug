@@ -1,0 +1,57 @@
+// Modal
+#NextStep.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h4 Make an 
+            span Appointment
+              
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        .input-group.mY-3
+            .input-group-prepend
+              span#basic-addon1.input-group-text 
+                i.fas.fa-user.fa-fw
+            input#datepicker.form-control(type='text' placeholder="Name...")
+        .input-group.mY-3
+            .input-group-prepend
+              span#basic-addon1.input-group-text 
+                i.fas.fa-mobile-alt.fa-fw
+
+            input#datepicker.form-control(type='text' placeholder="Phone Number ...")
+        .input-group.mY-3
+            .input-group-prepend
+              span#basic-addon1.input-group-text 
+                i.fas.fa-envelope.fa-fw
+
+            input#datepicker.form-control(type='text' placeholder="Email ...")
+        .input-group.mb-3
+          .input-group-prepend
+            label.input-group-text(for='inputGroupSelect01') 
+              i.fas.fa-concierge-bell.fa-fw
+
+          select#inputGroupSelect01.custom-select
+            option(selected='') Choose...
+            option(value='1') Haircut
+            option(value='2') Hairdryer
+            option(value='3') Hairstyle
+            option(value='3') Coloring
+            option(value='3') Shaving
+    
+        .input-group.mY-3
+            .input-group-prepend
+              span#basic-addon1.input-group-text 
+                i.far.fa-calendar-alt.fa-fw
+            input#datepicker.form-control(type='text' )
+        .input-group.mY-3
+            .input-group-prepend
+              span#basic-addon1.input-group-text 
+                i.far.fa-clock.fa-fw
+            input#datepicker.form-control(type='Time' )
+        .form-group
+          textarea#exampleFormControlTextarea1.form-control(rows='3')
+
+    
+      .modal-footer
+        button.btn(type='button') Make an appointment!

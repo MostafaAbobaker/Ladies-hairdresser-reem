@@ -1,0 +1,109 @@
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+
+  body
+    include include/header.pug
+    //satrt Register
+    section.Register
+      .container
+        .row.justify-content-center
+          .col-lg-6
+            form.form
+              h4 Make an 
+                span Appointment
+              .input-group.mY-3
+                .input-group-prepend
+                  span#basic-addon1.input-group-text 
+                    i.fas.fa-user.fa-fw
+                input.form-control(type='text' placeholder="Name...")
+              .input-group.mY-3
+                  .input-group-prepend
+                    span#basic-addon1.input-group-text 
+                      i.fas.fa-mobile-alt.fa-fw
+
+                  input.form-control(type='text' placeholder="Phone Number ...")
+              .input-group.mY-3
+                  .input-group-prepend
+                    span#basic-addon1.input-group-text 
+                      i.fas.fa-envelope.fa-fw
+
+                  input.form-control(type='text' placeholder="Email ...")
+              .input-group.mb-3
+                .input-group-prepend
+                  label.input-group-text(for='inputGroupSelect01') 
+                    i.fas.fa-concierge-bell.fa-fw
+
+                select#inputGroupSelect01.custom-select
+                  option(selected='') Choose...
+                  option(value='1') Haircut
+                  option(value='2') Hairdryer
+                  option(value='3') Hairstyle
+                  option(value='3') Coloring
+                  option(value='3') Shaving
+          
+              .input-group.mY-3
+                  .input-group-prepend
+                    span#basic-addon1.input-group-text 
+                      i.far.fa-calendar-alt.fa-fw
+                  input#datepickerz.form-control(type='text' )
+              .input-group.mY-3
+                  .input-group-prepend
+                    span#basic-addon1.input-group-text 
+                      i.far.fa-clock.fa-fw
+                  input.form-control(type='Time' )
+              .form-group
+                textarea#exampleFormControlTextarea1.form-control(rows='3')
+              button.btn(type='button') Make an Appointment!
+    //End Register
+    //start map
+    section.map
+      .mapouter
+        .gmap_canvas
+          iframe#gmap_canvas( src='https://maps.google.com/maps?q=park%20maver%202%20-%20t7%20dukkan%20no%3A10%20kayabasi%20mah.%20kayasehir%20blv.%20basksehir%2F%20istanbul&t=&z=15&ie=UTF8&iwloc=&output=embed', frameborder='0', scrolling='no', marginheight='0', marginwidth='0')
+          a(href='https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/') 
+
+    //End map
+    //start Footer
+    footer.footer
+      .container
+        .row
+          .col-lg-4.text-center
+            .image
+              img(src="images/ReemlogoWhite.svg", alt="")
+            .name
+              p.arbic ريم محسن
+              p Reem Mohsen
+          .col-lg-4.text-center
+            .contact
+              h4 Contact Us 
+              ul.list-unstyled
+                li
+                  a(href="")
+                    i.fas.fa-mobile-alt.fa-fw
+                    | 0212 939 99 14
+                li
+                  a(href="")
+                    i.fab.fa-whatsapp.fa-fw
+                    | 0554 157 41 52
+
+          .col-lg-4.text-center
+            .contact
+              h4 Address 
+              p park maver 2 - t7 dukkan no:10 kayabasi mah. kayasehir blv. basksehir/ istanbul
+    //End Footer
+    //Start Footer copy right
+    .copyRight.text-center
+      .container-fluid
+        .row
+          .col-lg-12.my-3
+            p Copyright  &copy; 2020
+              a(href="http://codexhome.com/")  Codex-Home 
+              |  All Rights Reserved 
+          div(class="col-lg-6 text-right my-2")  
+            .icon-bank
+    //End Footer copy right
+
+    include include/script.pug
+  
